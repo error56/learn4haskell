@@ -222,7 +222,7 @@ A pair of boolean and char:
 
 Boolean negation:
 >>> :t not
-not Bool :: Bool
+not :: Bool -> Bool
 
 Boolean 'and' operator:
 >>> :t (&&)
