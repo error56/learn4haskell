@@ -631,8 +631,8 @@ specifying complex expressions.
 sumLast2 :: Int -> Int
 sumLast2 n = last + oneBeforeLast
   where
-    last n = n % 10
-    oneBeforeLast n = (n % 100) div 10
+    last = mod n 10
+    oneBeforeLast = (mod n 100) div 10
 
 
 {- |
