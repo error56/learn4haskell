@@ -633,9 +633,9 @@ sumLast2 n = last n + oneBeforeLast n
   where
     last :: Int -> Int
     last n = n % 10
-  where
-    oneBeforeLast :: Int -> Int
-    oneBeforeLast n = (n % 100) div 10
+    where
+      oneBeforeLast :: Int -> Int
+      oneBeforeLast n = (n % 100) div 10
 
 
 {- |
