@@ -114,7 +114,8 @@ signatures__ and provide types in different situations where you don't
 immediately see what types will be inferred.
 -}
 
-
+ 
+ 
  {-
 Haskell is a __compiled__ language. At the illustration below, you can see the
 overall picture of the process from your code to the binary of the written
