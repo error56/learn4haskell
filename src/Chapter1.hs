@@ -629,13 +629,10 @@ specifying complex expressions.
 -}
 
 sumLast2 :: Int -> Int
-sumLast2 n = last n + oneBeforeLast n
+sumLast2 n = last + oneBeforeLast
   where
-    last :: Int -> Int
     last n = n % 10
-    where
-      oneBeforeLast :: Int -> Int
-      oneBeforeLast n = (n % 100) div 10
+    oneBeforeLast n = (n % 100) div 10
 
 
 {- |
