@@ -353,7 +353,7 @@ firstHalf :: [a] -> [a]
 firstHalf len = halfList where
   lengthList = length len
   half = div lengthList 2 -- get 50% of indexes
-  halfList = take half l
+  halfList = take half len
 
 
 {- |
