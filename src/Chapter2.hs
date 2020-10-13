@@ -505,7 +505,7 @@ True
 False
 -}
 isThird42 :: [a] -> Bool
-isThird42 (_ : _ : 42 : _) = True
+isThird42 (_: _: 42: _) = True
 isThird42 _ = False
 
 
