@@ -504,7 +504,7 @@ True
 >>> isThird42 [42, 42, 0, 42]
 False
 -}
-isThird42 :: [a] -> Bool
+isThird42 :: [Int] -> Bool
 isThird42 (_: _: 42: _) = True
 isThird42 _ = False
 
