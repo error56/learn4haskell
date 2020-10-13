@@ -788,7 +788,7 @@ Let's now try to eta-reduce some of the functions and ensure that we
 mastered the skill of eta-reducing.
 -}
 divideTenBy :: Int -> Int
-divideTenBy x = div 10
+divideTenBy = div 10
 
 -- TODO: type ;)
 listElementsLessThan :: Int -> [Int] -> [Int]
