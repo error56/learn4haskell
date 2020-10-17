@@ -344,6 +344,8 @@ of a book, but you are not limited only by the book properties we described.
 Create your own book type of your dreams!
 -}
 
+data Book = Book String Int String String String String
+
 {- |
 =⚔️= Task 2
 
@@ -373,6 +375,25 @@ after the fight. The battle has the following possible outcomes:
    doesn't earn any money and keeps what they had before.
 
 -}
+
+data Character = Character
+  { health   :: Int
+  , attack   :: Int
+  , gold     :: Int
+  }
+
+fight :: Character -> Character -> Character
+fight monster knight
+  | knightAttack >= monsterHealth = knight { gold = knightGold + monsterGold }
+  | monsterAttack >= knightHealth = knight { health = -1}
+  | otherwise = knight
+  where
+    knightAttack = attack knight
+    monsterHealth = health monster
+    knightGold = gold knight
+    monsterGold = gold monster
+    monsterAttack = attack monster
+    knightHealth = health knight
 
 {- |
 =🛡= Sum types
@@ -459,7 +480,10 @@ and provide more flexibility when working with data types.
 Create a simple enumeration for the meal types (e.g. breakfast). The one who
 comes up with the most number of names wins the challenge. Use your creativity!
 -}
-
+data Meal 
+  = Breakfast 
+  | Dinner
+  | Lunch
 {- |
 =⚔️= Task 4
 
